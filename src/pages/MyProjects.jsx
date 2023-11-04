@@ -33,7 +33,7 @@ const MyProjects = ({ helmetTitle }) => {
         <Card sx={{
             height: '100vh',
             backgroundColor: 'whitesmoke',
-            overflowY: 'auto'
+            overflowY: 'scroll'
         }}>
             <Helmet>
                 <title>
@@ -51,7 +51,7 @@ const MyProjects = ({ helmetTitle }) => {
                         //editing the text so the component doesn't render <br /> as a part of the text
                         let editedText = item.text.replaceAll('<br />', String.fromCharCode(10))
                         return (
-                            <Grid xs={12} sm={6} md={6} lg={4} sx={{ mb: 5, px: 3 }}>
+                            <Grid xs={12} sm={6} md={6} lg={4} sx={{ mb: 5, px: {xs:1, sm:3} }}>
                                 <Card sx={{ backgroundColor: item.bg, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', border: `1px solid ${grey[300]}`, mx: 'auto' }}>
 
                                     <CardActionArea>

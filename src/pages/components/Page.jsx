@@ -11,7 +11,7 @@ const Page = ({ children, pageNumber, index, ...others }) => {
         >
             {
                 pageNumber === index && (
-                    <Box>
+                    <Box sx={{overflow:'auto',height :'100vh'}}>
                         {children}
                     </Box>
                 )

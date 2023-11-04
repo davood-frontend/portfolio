@@ -31,7 +31,7 @@ const About = ({ helmetTitle }) => {
         <Card sx={{
             height: '100vh',
             backgroundColor: 'whitesmoke',
-            overflowY: 'auto'
+            overflowY: 'scroll'
         }}>
             <Helmet>
                 <title>
@@ -45,7 +45,7 @@ const About = ({ helmetTitle }) => {
 
                 <CostumDivider align='center' bColor='secondary.main' cColor='secondary' icon={<EmojiEmotionsIcon sx={{ fontSize: '20px', fill: grey[800] }} />} text='درباره من' />
 
-                <Box sx={{ my: 3, px: 3 }}>
+                <Box sx={{ px: 3 }}>
 
                     <Typography textAlign='left' ref={textEl} color='black' sx={{ px: 2, direction: 'ltr', lineHeight: 2.5 }} variant='subtitle2' />
 

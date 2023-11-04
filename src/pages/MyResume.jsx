@@ -16,7 +16,7 @@ const MyResume = ({ helmetTitle }) => {
         <Card sx={{
             height: '100vh',
             backgroundColor: 'whitesmoke',
-            overflowY: 'auto'
+            overflowY: 'scroll'
         }}>
             <Helmet>
                 <title>

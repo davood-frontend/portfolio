@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContent, Divider, Chip, Typography } from '@mui/material';
-import { FaWandMagicSparkles } from 'react-icons/fa6';
 import { grey } from '@mui/material/colors';
 import { Helmet } from 'react-helmet-async';
 import Grid from '@mui/material/Unstable_Grid2'
@@ -12,7 +11,7 @@ const Contact = ({ helmetTitle }) => {
         <Card sx={{
             height: '100vh',
             backgroundColor: 'whitesmoke',
-            overflowY: 'auto'
+            overflowY: 'scroll'
         }}>
             <Helmet>
                 <title>
@@ -24,8 +23,8 @@ const Contact = ({ helmetTitle }) => {
                                 <Chip label={<Typography variant='body1' color='black' textAlign='center'> ارتباط با من </Typography>} />
                             </Divider>
 
-                            <Grid container sx={{ justifyContent: 'center', mt: 5 }}>
-                                <Grid xs={10} sx={{ direction: 'ltr' }}>
+                            <Grid container sx={{ justifyContent: 'center', mt: 5,px : {sm : 0, md : 5} }}>
+                                <Grid xs={12} sx={{ direction: 'ltr' }}>
                                     <Card sx={{ justifyContent: 'center', alignItems: 'center' }}>
                                         <ContactForm />
                                     </Card>

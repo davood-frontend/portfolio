@@ -5,7 +5,7 @@ import SwipeableViews from 'react-swipeable-views';
 import MainContext from '../context'
 import Page from '../pages/components/Page';
 import { DrawerActionButton } from '../components/drawer';
-import { Home, About, MyProjects, MyArticles, Contact } from '../pages'
+import { Home, About, MyProjects, Contact } from '../pages'
 import MyResume from '../pages/MyResume';
 import { useTheme } from '@mui/material/styles'
 import { SideBar } from '../components/sidebar'

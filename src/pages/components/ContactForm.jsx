@@ -9,7 +9,6 @@ import toast from 'react-hot-toast';
 import Face6Rounded from '@mui/icons-material/Face6Rounded'
 import SubjectRounded from '@mui/icons-material/SubjectRounded';
 import { contactValidationSchema } from '../../validation/contactValidation';
-import ReCAPTCHA from 'react-google-recaptcha'
 const ContactForm = () => {
     const formRef = useRef()
     const contactInputNames = {
@@ -164,17 +163,7 @@ const ContactForm = () => {
                 </Grid>
             </CardContent>
             <CardActions sx={{ flexDirection: 'column' }}>
-                <ReCAPTCHA
-                    style={{ marginLeft: 'auto', marginRight: '9px', marginBottom: '2px' }}
-                    sitekey={import.meta.env.VITE_SITE_KEY}
-                    theme='dark'
-                    hl='fa'
-                    onChange={value => {
-                        formik.setFieldValue('recaptcha', value)
-                    }}
-                />
-                {formik.errors.recaptcha && formik.touched.recaptcha && (<Typography sx={{ ml: '45px', width: 1, textAlign: 'left' }} variant='caption' color='error'>{formik.errors.recaptcha}</Typography>)}
-
+             
                 <Button type='submit' color='info' variant='contained' sx={{ mt: 4, width: 8 / 10, backgroundColor: '#E9B384', color: grey[800], ":hover": { backgroundColor: '#E9B384' } }}>
                     ارسال پیام
                 </Button>
