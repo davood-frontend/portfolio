@@ -15,13 +15,13 @@ export const information = [
     },
     {
         title: 'گیت هاب من',
-        href: '',
+        href: 'https://github.com/davood-frontend',
         color: '#ffff',
         icon: <GitHub />
     },
     {
         title: 'توییتر من',
-        href: '',
+        href: 'https://twitter.com/davood_frontend',
         color: '#1C9CEA',
         icon: <Twitter />
     },

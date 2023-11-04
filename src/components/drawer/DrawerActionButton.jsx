@@ -7,23 +7,23 @@ import MainContext from '../../context'
 const DrawerActionButton = () => {
     const { setDrawerOpen } = useContext(MainContext)
     return (
-        <Box
+
+        <Fab
             sx={{
-                position: 'absolute',
+                m: 2,
                 display: {
-                    xs: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none'
-                }
+                    xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none'
+                },
+                position: 'fixed',
+                top: '0px',
+                alignItems:'center'
             }}
+            color='primary'
+            size='small'
+            onClick={() => setDrawerOpen(true)}
         >
-            <Fab
-                sx={{ m: 2}}
-                color='primary'
-                size='small'
-                onClick={() => setDrawerOpen(true)}
-            >
-                <FaBars />
-            </Fab>
-        </Box>
+            <FaBars />
+        </Fab>
     );
 };
 

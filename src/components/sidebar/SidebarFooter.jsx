@@ -5,7 +5,6 @@ import { Typography, Box} from '@mui/material'
 const SidebarFooter = () => {
     return (
         <Box sx={{
-            flexGrow: 1,
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',

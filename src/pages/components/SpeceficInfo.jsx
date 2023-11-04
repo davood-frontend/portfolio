@@ -1,6 +1,6 @@
 import React from 'react';
 import DevInfo from '.././components/DevInfo'
-import avatar from '../../assets/logo.png'
+import blackWhiteAvt from '../../assets/blackWhiteAvt.jpg'
 import { Avatar } from '@mui/material'
 import CodeIcon from '@mui/icons-material/Code';
 import Grid from '@mui/material/Unstable_Grid2'
@@ -29,14 +29,14 @@ const SpeceficInfo = () => {
                     شهر : پاکدشت
                 </DevInfo>
                 <DevInfo>
-                    davood@gmail.com : آدرس ایمیل
+                    davood.frontend@gmail.com : آدرس ایمیل
                 </DevInfo>
-            </Grid>
+            </Grid> 
             <Grid
                 xs={0} sm={0} md={4} lg={4} xl={4}
             >
                 <Avatar
-                    src={avatar}
+                    src={blackWhiteAvt}
                     variant='rounded'
                     sx={{
                         height: 250,

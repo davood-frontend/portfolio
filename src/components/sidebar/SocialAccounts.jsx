@@ -5,7 +5,7 @@ import {useTheme} from '@mui/material/styles';
 const SocialAccounts = () => {
     const theme = useTheme()
     return (
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 6 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb : 6 ,mt : 'auto'}}>
             {information.map((item, index) => {
                 return <a key={index} href={item.href} target='_blank'>
                     <Tooltip title={item.title} arrow placement='bottom' sx={{

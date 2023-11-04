@@ -16,7 +16,7 @@ const Mainlayout = ({ children }) => {
         <CacheProvider value={cacheRTL}>
             <ThemeProvider theme={DarkTheme}>
                 <HelmetProvider>
-                    <Grid container sx={{ height: '100vh' }}>
+                    <Grid container sx={{ height: 1,width : 1 }}>
                         {children}
                     </Grid>
 

@@ -57,14 +57,14 @@ const Home = ({helmetTitle}) => {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-
+            position:'relative',
         }}>
             <Helmet>
                 <title>
                     {helmetTitle}
                 </title>
             </Helmet>
-            <Particles init={particlesInit} id='tsparticles' loaded={particlesLoaded} options={links} />
+            <Particles init={particlesInit} id='tsparticles' loaded={particlesLoaded} options={links} style={{position:'absolute'}}/>
             <Typography variant='h3' ref={nameEl} sx={{ mb: 5 ,fontSize : {xs : '35px',sm : '45px', md : '50px'}}} />
             <Typography variant='h4' ref={infoEl} sx={{fontSize : {xs : '15px', sm : '25px', md : '30px'}}}/>
 

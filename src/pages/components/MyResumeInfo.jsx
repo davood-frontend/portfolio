@@ -7,8 +7,7 @@ import CostumDivider from '../../components/common/CostumDivider'
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import FeedRoundedIcon from '@mui/icons-material/FeedRounded';
 import { grey } from '@mui/material/colors';
-// fix the colors
-// fix the dates
+
 const MyResumeInfo = () => {
     const theme = useTheme()
     const smallerThanMd = useMediaQuery(theme.breakpoints.down('md'))
@@ -35,13 +34,13 @@ const MyResumeInfo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant='caption' color='grey'>
-                                    1398 - 14001
+                                    1400 - 1401
                                 </Typography>
                                 <Typography variant='body1' color='black'>
                                     جاوااسکریپت
                                 </Typography>
                                 <Typography variant='caption' color='black'>
-                                    مدرس : استاد حسن خسروجردی
+                                آکادمی : برنامه نویسان
                                 </Typography>
                             </TimelineContent>
                         </TimelineItem>
@@ -54,13 +53,13 @@ const MyResumeInfo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant='caption' color='grey'>
-                                    1398 - 14001
+                                    1401 - 1401
                                 </Typography>
                                 <Typography variant='body1' color='black'>
                                     ری اکت
                                 </Typography>
                                 <Typography variant='caption' color='black'>
-                                    مدرس : استاد حسن خسروجردی
+                                    آکادمی : برنامه نویسان
                                 </Typography>
                             </TimelineContent>
                         </TimelineItem>
@@ -72,13 +71,13 @@ const MyResumeInfo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant='caption' color='grey'>
-                                    1398 - 14001
+                                    1401 - 1401
                                 </Typography>
                                 <Typography variant='body1' color='black'>
                                     متخصص فرانت اند
                                 </Typography>
                                 <Typography variant='caption' color='black'>
-                                    مدرس : استاد حسن خسروجردی
+                                آکادمی : برنامه نویسان
                                 </Typography>
                             </TimelineContent>
                         </TimelineItem>
@@ -90,7 +89,7 @@ const MyResumeInfo = () => {
                 <Grid xs={12} md={6}>
 
                     <Grid xs={12}>
-                    <CostumDivider bColor={grey[400]} cColor='info' text='تحصیلات من' />
+                    <CostumDivider bColor={grey[400]} cColor='warning' text='تحصیلات من' />
                     </Grid>
 
                     <Timeline position={smallerThanMd && 'alternate'} sx={{

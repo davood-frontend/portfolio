@@ -56,6 +56,8 @@ const App = () => {
             index={pageNumber}
             onChangeIndex={onTabChange}
             axis='x'
+            onTouchStart={(e) => {e.stopPropagation()}}
+            disabled={true}
           >
             <Page variant='h5' pageNumber={pageNumber} index={0}>
               <Home helmetTitle={'وبسایت داود رضایی | صفحه اصلی'} />

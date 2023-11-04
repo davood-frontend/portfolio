@@ -12,7 +12,7 @@ const Contact = ({ helmetTitle }) => {
         <Card sx={{
             height: '100vh',
             backgroundColor: 'whitesmoke',
-            overflowY: 'scroll'
+            overflowY: 'auto'
         }}>
             <Helmet>
                 <title>
@@ -21,7 +21,7 @@ const Contact = ({ helmetTitle }) => {
             </Helmet>
                         <CardContent>
                             <Divider textAlign='center' sx={{ "&::before, &::after": { borderColor: grey[300] }, mt: 2 }}>
-                                <Chip icon={<FaWandMagicSparkles color={grey[900]} />} label={<Typography variant='body1' color='black' textAlign='center'> ارتباط با من </Typography>} sx={{ p: 3 }} />
+                                <Chip label={<Typography variant='body1' color='black' textAlign='center'> ارتباط با من </Typography>} />
                             </Divider>
 
                             <Grid container sx={{ justifyContent: 'center', mt: 5 }}>

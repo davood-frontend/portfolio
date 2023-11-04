@@ -5,6 +5,7 @@ import Grid from '@mui/material/Unstable_Grid2'
 import { styled } from '@mui/material/styles'
 import CloseIcon from '@mui/icons-material/Close';
 const MyProjectsDialog = ({ dialog, setDialog }) => {
+    
 
 
     const ShowButton = styled(Button)(() => ({
@@ -28,7 +29,6 @@ const MyProjectsDialog = ({ dialog, setDialog }) => {
         borderRadius: 1,
     }))
 
-//09921164252
     return (
         <Dialog open={dialog.open} onClose={() => setDialog({ ...dialog, open: false })} fullWidth={true} maxWidth='md' PaperProps={{ style: { backgroundColor: 'whitesmoke', color: grey[800] }, }}>
             <CancelButton onClick={() => setDialog({ ...dialog, open: false })}>
@@ -42,14 +42,22 @@ const MyProjectsDialog = ({ dialog, setDialog }) => {
 
                     <Grid xs={12} sm={6}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: 1, paddingRight: { xs: 0, sm: 3 } }}>
-                            <Typography variant='subtitle2'>
-                                {dialog.data.text}
-                            </Typography>
-                            <ShowButton sx={{ marginY: { xs: 3, sm: 0
-                             } }} >
-                                مشاهده آنلاین
-                            </ShowButton>
-                            
+                            {/* dangerouslySetInnerHTML is a prop that helps typography to render the html tags */}
+                            <Typography variant='subtitle2' dangerouslySetInnerHTML={{ __html: dialog.data.text }} />
+
+
+                            <a href={dialog.data.href} target='_blank'>
+                                <ShowButton sx={{
+                                    marginY: {
+                                        xs: 3, sm: 0
+                                    },
+                                    width: 1
+                                }} >
+                                    مشاهده آنلاین
+
+                                </ShowButton>
+
+                            </a>
                         </Box>
                     </Grid>
                     <Grid xs={12} sm={6}>

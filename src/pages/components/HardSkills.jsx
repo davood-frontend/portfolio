@@ -23,8 +23,8 @@ const HardSkills = () => {
             setJavascript(prev => { return Math.min(prev + 1, 70) })
             setBootstrap(prev => { return Math.min(prev + 1, 75) })
             setReact(prev => { return Math.min(prev + 1, 70) })
-            setMui(prev => { return Math.min(prev + 1, 60) })
-            setGit(prev => { return Math.min(prev + 1, 50) })
+            setMui(prev => { return Math.min(prev + 1, 70) })
+            setGit(prev => { return Math.min(prev + 1, 40) })
 
 
         }, 70)

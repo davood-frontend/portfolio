@@ -5,19 +5,18 @@ import CostumDivider from '../components/common/CostumDivider';
 import { grey } from '@mui/material/colors';
 import MyResumeInfo from './components/MyResumeInfo';
 import SoftSkills from './components/SoftSkills';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows';
 import HardSkills from './components/HardSkills';
 const MyResume = ({ helmetTitle }) => {
 
 
 
-// fix the icons
     return (
         <Card sx={{
             height: '100vh',
             backgroundColor: 'whitesmoke',
-            overflowY: 'scroll'
+            overflowY: 'auto'
         }}>
             <Helmet>
                 <title>
@@ -32,7 +31,7 @@ const MyResume = ({ helmetTitle }) => {
                 <HardSkills />
 
                 
-                <CostumDivider align='right' bColor={grey[300]} icon={<ConnectWithoutContactIcon sx={{fill:grey[500]}}/>} text='مهارت های نرم من ' mt={5} mb={5}/>
+                <CostumDivider align='right' bColor={grey[300]} icon={<PsychologyIcon sx={{fill:grey[500]}}/>} text='مهارت های نرم من ' mt={5} mb={5}/>
 
 
                 <SoftSkills />
