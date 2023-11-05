@@ -1,5 +1,5 @@
 import React from 'react';
-import DevInfo from '.././components/DevInfo'
+import DevInfo from './DevInfo'
 import blackWhiteAvt from '../../assets/blackWhiteAvt.jpg'
 import { Avatar ,Box} from '@mui/material'
 import CodeIcon from '@mui/icons-material/Code';
@@ -15,7 +15,7 @@ const SpeceficInfo = () => {
                 sx={{ paddingLeft: { sm: 2, lg: 0 } }}
             >
                 <CostumDivider align='right' bColor='primary.main' cColor='primary' icon={<CodeIcon />} text='توسعه دهنده فرانت اند' />
-                <Box >
+                <Box textAlign='left' >
                     <DevInfo>
                         نام و نام خوانوادگی : داود رضایی
                     </DevInfo>

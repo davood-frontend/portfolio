@@ -50,6 +50,7 @@ const Home = ({helmetTitle}) => {
         <Box sx={{
             backgroundImage: `url(${bgBlueSea})`,
             height: '100vh',
+            overflow:'hidden',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
