@@ -44,7 +44,7 @@ const Home = ({helmetTitle}) => {
         await loadFull(engine)
     }, []);
     const particlesLoaded = useCallback(async container => {
-        await console.log(container)
+        await console.log(container);
     }, [])
     return (
         <Box sx={{
