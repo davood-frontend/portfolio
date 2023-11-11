@@ -1,6 +1,6 @@
 import { useEffect, useRef, useCallback } from 'react'
 import { Box, Typography } from '@mui/material'
-import bgBlueSea from '../assets/blueSea.jpg'
+import beach from '../assets/beach.jpg'
 import Typed from 'typed.js'
 import Particles from 'react-particles'
 import { loadFull } from 'tsparticles'
@@ -48,7 +48,7 @@ const Home = ({helmetTitle}) => {
     }, [])
     return (
         <Box sx={{
-            backgroundImage: `url(${bgBlueSea})`,
+            backgroundImage: `url(${beach})`,
             height: '100vh',
             overflow:'hidden',
             backgroundPosition: 'center',
