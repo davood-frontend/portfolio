@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Box, Fade } from '@mui/material';
-import { useTheme } from '@mui/material/styles'
+import { Fade } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'
-import {softSkillsData} from '../../constants/softSkillsData'
+import { softSkillsData } from '../../constants/softSkillsData'
+import SkillTemplate from './SkillTemplate';
 const SoftSkills = () => {
     const [loading, setLoading] = useState(false)
 
@@ -15,7 +15,7 @@ const SoftSkills = () => {
         }
     }, [])
 
- 
+
     return (
 
         <Fade in={loading} timeout={1600}>
@@ -23,18 +23,7 @@ const SoftSkills = () => {
             <Grid container sx={{ justifyContent: 'space-around', my: 3 }}>
                 {
                     data.map((item, index) => (
-                        <Grid xs={11} sm={5} md={5.5} lg={3.5} key={index} sx={item.style}>
-                            <Box>
-                                <Box sx={{ display: 'flex', justifyContent: 'center', py: 3 }}>
-                                    {item.icon}
-                                </Box>
-                                <Box sx={{ mb: 1.5 }}>
-                                    <Typography color="black">
-                                        {item.title}
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        </Grid>
+                        <SkillTemplate key={index} icon={item.icon} title={item.title} />
                     ))
                 }
             </Grid>

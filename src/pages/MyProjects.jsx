@@ -46,7 +46,7 @@ const MyProjects = ({ helmetTitle }) => {
                     <Chip label={<Typography color='black'> نمونه کار های من </Typography>} />
                 </Divider>
 
-                <Grid container sx={{ width: 1, mb: 3, mt: 5 }}>
+                <Grid container sx={{ width: 1, mb: 3, mt: 5 ,justifyContent:'end'}}>
                     {data.map((item, index) => {
                         //editing the text so the component doesn't render <br /> as a part of the text
                         let editedText = item.text.replaceAll('<br />', String.fromCharCode(10))
