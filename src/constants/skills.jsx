@@ -20,10 +20,10 @@ export const devSkills = [
         name: 'REACT',
         icon: <SiReact style={{ fontSize: '60px', color: lightBlue[600] }} />,
     },
-    {
-        name: 'Next js',
-        icon: <SiNextdotjs style={{ fontSize: '60px', color: grey[900] }} />,
-    },
+    // {
+    //     name: 'Next js',
+    //     icon: <SiNextdotjs style={{ fontSize: '60px', color: grey[900] }} />,
+    // },
 
     {
         name: 'MATERIAL UI',
