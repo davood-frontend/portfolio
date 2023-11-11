@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Card, CardContent, Chip, Divider, Typography, CardActionArea, CardActions, CardMedia, Button, Dialog, DialogContent, DialogTitle, Avatar, DialogActions, Box } from '@mui/material'
 import { Helmet } from 'react-helmet-async'
 import { grey } from '@mui/material/colors'
@@ -11,6 +11,10 @@ const MyProjects = ({ helmetTitle }) => {
         open: false,
         data: { img: '', softColor: '', boldColor: '', title: '', text: '', href: '' },
     })
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const dialogHandler = (index) => {
         switch (index) {
