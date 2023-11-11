@@ -46,7 +46,7 @@ const MyProjectsDialog = ({ dialog, setDialog }) => {
                             <Typography variant='subtitle2' dangerouslySetInnerHTML={{ __html: dialog.data.text }} />
 
 
-                            <a href={dialog.data.href} target='_blank'>
+                            <a href={dialog.data.href} target='_blank' style={{textDecoration:'none'}}>
                                 <ShowButton sx={{
                                     marginY: {
                                         xs: 3, sm: 0
